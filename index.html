@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📚 Книжный Квест — Викторина</title>
+  <title>📚 Книжный Квест</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="book-container">
-    
-    <!-- Окно профиля игрока -->
     <div class="profile-panel">
       <div class="profile-info">
         <span class="profile-title">Статус:</span>
@@ -18,7 +16,6 @@
       <div class="profile-stars"><span id="starsCount">0</span> ⭐</div>
     </div>
 
-    <!-- Меню -->
     <div id="menuScreen" class="screen active">
       <h1>📖 Книжный Квест</h1>
       <p class="subtitle">Выбери серию книг и проверь свои знания!</p>
@@ -26,29 +23,23 @@
       
       <div class="book-list">
         <button class="book-card" data-book="kamora">
-          <span class="book-icon">🗡️</span>
-          <span class="book-title">Хроники Каморры (Кора Рейли)</span>
+          <span class="book-icon">🗡️</span><span class="book-title">Хроники Каморры (Кора Рейли)</span>
         </button>
         <button class="book-card" data-book="bratva">
-          <span class="book-icon">🔪</span>
-          <span class="book-title">Мясник Братвы (Т. Дж. Магуайр)</span>
+          <span class="book-icon">🔪</span><span class="book-title">Мясник Братвы (Т. Дж. Магуайр)</span>
         </button>
         <button class="book-card" data-book="monstra">
-          <span class="book-icon">👹</span>
-          <span class="book-title">Монстра (Рина Кент)</span>
+          <span class="book-icon">👹</span><span class="book-title">Монстра (Рина Кент)</span>
         </button>
         <button class="book-card" data-book="nightdevil">
-          <span class="book-icon">😈</span>
-          <span class="book-title">Ночь Дьявола (Пенелопа Дуглас)</span>
+          <span class="book-icon">😈</span><span class="book-title">Ночь Дьявола (Пенелопа Дуглас)</span>
         </button>
         <button class="book-card" data-book="godofwrath">
-          <span class="book-icon">🔥</span>
-          <span class="book-title">Бог Гнева (Рина Кент, Наследие Богов)</span>
+          <span class="book-icon">🔥</span><span class="book-title">Бог Гнева (Рина Кент)</span>
         </button>
       </div>
     </div>
 
-    <!-- Викторина -->
     <div id="quizScreen" class="screen">
       <div class="page-header">
         <button id="backBtn" class="back-btn">← Назад</button>
@@ -68,7 +59,6 @@
       </div>
     </div>
 
-    <!-- Результаты -->
     <div id="resultScreen" class="screen">
       <h1 id="resultTitle">🏆 Результат</h1>
       <p class="result-text" id="resultText"></p>
@@ -79,7 +69,6 @@
         <button id="restartBtn" class="restart-btn secondary">🏠 В главное меню</button>
       </div>
     </div>
-
   </div>
   <script src="script.js"></script>
 </body>
