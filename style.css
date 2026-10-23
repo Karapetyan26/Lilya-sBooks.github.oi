@@ -16,28 +16,24 @@ body {
   background-image: repeating-linear-gradient(0deg, transparent, transparent 28px, rgba(139,90,43,.05) 28px, rgba(139,90,43,.05) 29px);
 }
 
-/* --- СТИЛИ ПРОФИЛЯ --- */
+/* --- ПРОФИЛЬ --- */
 .profile-panel {
   position: absolute;
   top: 15px; left: 20px; right: 20px;
   display: flex; justify-content: space-between; align-items: center;
   font-size: 0.9em; z-index: 10;
 }
-
 .profile-info {
   background: #fffaf0; padding: 6px 15px;
   border-radius: 20px; border: 2px solid #8b5a2b;
   box-shadow: 0 4px 10px rgba(0,0,0,.15);
   display: flex; align-items: center; gap: 8px;
 }
-
 .profile-title { color: #8b6b4a; font-weight: bold; }
 .profile-status {
   color: #c0392b; font-weight: bold; text-transform: uppercase;
-  font-size: 0.9em; letter-spacing: 0.5px;
+  font-size: 0.9em; letter-spacing: 0.5px; transition: color 0.3s;
 }
-
-/* Разные цвета для статусов */
 .profile-status[data-rank="guru"] { color: #d4af37; text-shadow: 0 0 5px rgba(212,175,55,0.5); }
 .profile-status[data-rank="expert"] { color: #8e44ad; }
 .profile-status[data-rank="reader"] { color: #2980b9; }
@@ -51,7 +47,7 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,.3);
 }
 
-/* --- ОСТАЛЬНЫЕ СТИЛИ --- */
+/* --- ЭКРАНЫ --- */
 .screen { display: none; animation: fadeIn .5s ease; margin-top: 50px; }
 .screen.active { display: block; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
@@ -77,6 +73,7 @@ h1 { text-align: center; color: #5a3a20; font-size: 2em; margin-bottom: 10px; te
 .book-icon { font-size: 1.8em; }
 .book-title { font-weight: bold; }
 
+/* --- ВИКТОРИНА --- */
 .page-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; gap: 10px; flex-wrap: wrap; }
 .back-btn { background: #8b5a2b; color: #ffeaa7; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-family: inherit; transition: background .3s; }
 .back-btn:hover { background: #6b4520; }
@@ -106,6 +103,7 @@ h1 { text-align: center; color: #5a3a20; font-size: 2em; margin-bottom: 10px; te
 .feedback.success { background: #d4edda; color: #155724; }
 .feedback.fail { background: #f8d7da; color: #721c24; }
 
+/* --- РЕЗУЛЬТАТЫ --- */
 .result-title.win { color: #2e7d32; }
 .result-title.lose { color: #c62828; }
 .result-text { text-align: center; font-size: 1.15em; margin: 20px 0; color: #5a3a20; }
